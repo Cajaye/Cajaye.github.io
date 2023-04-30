@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icons/travel.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Membership Form</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div>
+          <img class="icon" src="./icons/travel.png" alt="travel icon" />
+          <h1>Book It.</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about_us.html">About us</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a id="singUp_button" class="button" href="membership_form.html"
+              >Membership</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1 class="membership_header">Get a membership</h1>
+      <form id="memb-form" class="form">
+        <div class="form_group">
+          <label for="first-name">Firstname:</label>
+          <input
+            class="input"
+            type="text"
+            name="first-name"
+            id="first-name"
+            required
+          />
+        </div>
+
+        <div class="form_group">
+          <label for="last-name">Lastname:</label>
+          <input
+            required
+            class="input"
+            type="text"
+            name="last-name"
+            id="last-name"
+          />
+        </div>
+
+        <div class="form_group">
+          <label for="email">Email:</label>
+          <input class="input" type="email" name="email" id="email" required />
+        </div>
+
+        <div class="form_group">
+          <label for="phone">Phone:</label>
+          <input class="input" type="number" name="phone" id="phone" required />
+        </div>
+
+        <div class="form_group">
+          <label>Gender:</label>
+          <label>
+            <input type="radio" name="gender" value="male" required />
+            Male
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="female" />
+            Female
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value="other" />
+            Other
+          </label>
+        </div>
+
+        <div class="form_group">
+          <label for="bio">Tell us about yourself:</label>
+          <textarea
+            required
+            class="input"
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="form_group">
+          <input required type="checkbox" name="age_check" id="age_check" />
+          I am over 18 years old
+        </div>
+
+        <div class="form_group">
+          <label for="dropdown">How did you hear about us:</label>
+          <select id="dropdown" required>
+            <option value="Twitter">Twitter</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Google">Google</option>
+          </select>
+        </div>
+
+        <div class="form_group">
+          <input class="submit_button" type="submit" value="Submit" />
+          <input class="reset_button" type="reset" value="Reset" />
+        </div>
+      </form>
+
+      <footer>
+        <h3>Book it with Book it &copy; <span id="year"></span></h3>
+        <div class="footer_links">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about_us.html">About us</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="reviews.html">Reviews</a>
+            </li>
+            <li>
+              <a href="destinations.html">Destinations</a>
+            </li>
+            <li>
+              <a href="membership_form.html">Membership</a>
+            </li>
+            <li>
+              <a href="appointment_form.html">Appointment</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_contacts">
+          <h3>Contact us</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                title="instagram icon"
+              >
+                <img
+                  class="icon"
+                  src="./icons/instagram.png"
+                  alt="instagram icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                title="twitter icon"
+              >
+                <img
+                  class="icon"
+                  src="./icons/twitter.png"
+                  alt="twitter icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" title="facebook icon">
+                <img
+                  class="icon"
+                  src="./icons/facebook.png"
+                  alt="facebook icon"
+                />
+              </a>
+            </li>
+          </ul>
+          <div>
+            <p>Support:</p>
+            <br />
+            <p>
+              <a href="mailto:bookit@travel.com">bookit@travel.com</a>
+            </p>
+            <br />
+            <p>
+              <a href="tel:18009959540">Call this number 889-5959595</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

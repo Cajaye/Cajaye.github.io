@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icons/travel.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reviews</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div>
+          <img class="icon" src="./icons/travel.png" alt="travel icon" />
+          <h1>Book It.</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about_us.html">About us</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a id="singUp_button" class="button" href="membership_form.html"
+              >Membership</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <article class="reviews review_reviews">
+        <div class="review">
+          <div>
+            <img
+              class="profile_image"
+              src="./images/person1.jpg"
+              alt="profile image"
+            />
+            <p class="reviewer">James Clover</p>
+          </div>
+          <p class="review_content">
+            "I had an amazing experience booking my vacation through this travel
+            agency. The staff was friendly and knowledgeable, and they helped me
+            find the perfect destination and accommodations for my budget. The
+            trip went smoothly and exceeded my expectations. I highly recommend
+            this agency to anyone looking for a hassle-free travel experience!"
+          </p>
+        </div>
+
+        <div class="review">
+          <div>
+            <img
+              class="profile_image"
+              src="./images/person2.jpg"
+              alt="profile image"
+            />
+            <p class="reviewer">Sasha Clark</p>
+          </div>
+          <p class="review_content">
+            "I had a fantastic time on my recent trip booked through this travel
+            agency. The destination was stunning, and the accommodations were
+            top-notch. The agency's attention to detail and personalized
+            approach really set them apart from other travel companies. They
+            took care of everything, and I felt confident and stress-free
+            throughout the entire process. I highly recommend this agency for
+            anyone looking for a memorable and seamless travel experience."
+          </p>
+        </div>
+
+        <div class="review">
+          <div>
+            <img
+              class="profile_image"
+              src="./images/person3.jpg"
+              alt="profile image"
+            />
+            <p class="reviewer">Monique Warp</p>
+          </div>
+          <p class="review_content">
+            "I cannot recommend this travel agency enough! Their expertise and
+            professionalism made planning my dream vacation a breeze. They
+            listened to my needs and preferences, and helped me create an
+            itinerary that exceeded my expectations. The trip was flawless, and
+            I couldn't have asked for a better experience. I will definitely be
+            using this agency for all my future travel needs."
+          </p>
+        </div>
+      </article>
+
+      <form id="review_form">
+        <div class="form_group">
+          <label for="make_review">Make a Review:</label>
+          <input
+            required
+            class="input"
+            type="text"
+            name="make_review"
+            id="make_review"
+          />
+        </div>
+        <div class="form_group">
+          <input class="submit_button" type="submit" value="Submit" />
+        </div>
+      </form>
+
+      <footer>
+        <h3>Book it with Book it &copy; <span id="year"></span></h3>
+        <div class="footer_links">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about_us.html">About us</a>
+            </li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a href="reviews.html">Reviews</a>
+            </li>
+            <li>
+              <a href="destinations.html">Destinations</a>
+            </li>
+            <li>
+              <a href="membership_form.html">Membership</a>
+            </li>
+            <li>
+              <a href="appointment_form.html">Appointment</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_contacts">
+          <h3>Contact us</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                title="instagram icon"
+              >
+                <img
+                  class="icon"
+                  src="./icons/instagram.png"
+                  alt="instagram icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                title="twitter icon"
+              >
+                <img
+                  class="icon"
+                  src="./icons/twitter.png"
+                  alt="twitter icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" title="facebook icon">
+                <img
+                  class="icon"
+                  src="./icons/facebook.png"
+                  alt="facebook icon"
+                />
+              </a>
+            </li>
+          </ul>
+          <div>
+            <p>Support:</p>
+            <br />
+            <p>
+              <a href="mailto:bookit@travel.com">bookit@travel.com</a>
+            </p>
+            <br />
+            <p>
+              <a href="tel:18009959540">Call this number 889-5959595</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

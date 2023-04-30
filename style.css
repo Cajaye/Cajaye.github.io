@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.1;
+  color: rgb(55 65 81);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #3e68ff;
+  color: rgb(226 232 240);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer ul li {
+  line-height: 1.7;
+}
+
+footer ul li:hover,
+nav ul li a:not(.button):hover {
+  text-decoration: underline;
+}
+
+.footer_contacts ul {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  padding: 0.45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 1.7rem;
+}
+
+ul a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero_image {
+  object-fit: cover;
+  height: min(80vh, 900px);
+  width: 100%;
+}
+
+header {
+  display: grid;
+  grid-template-areas: "hero";
+  height: 65vh;
+  max-height: 600px;
+  align-content: center;
+  place-items: center;
+}
+
+header > * {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.hero_content {
+  z-index: 1;
+  color: rgb(31 41 55);
+  line-height: 1.25;
+  text-align: center;
+}
+
+.hero_content h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+.hero_content p {
+  font-size: 0.875rem;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #3e68ff;
+  text-decoration: none;
+  color: rgb(226 232 240);
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 0.5em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.first_section {
+  padding-top: 6rem;
+  margin: 3rem 2rem;
+}
+
+.cont_2 p,
+.second_section p,
+.services p,
+.services ol li,
+.first_section_col_2 p,
+.destinations_section ol li {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.cont_2 p {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cont_2 ul {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.cont_2 ul li div {
+  text-align: center;
+  width: 400px;
+  height: 320px;
+}
+
+.cont_2 ul li div img,
+.second_section img {
+  border-radius: 0.375rem;
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+}
+
+.second_section_cont_1 div p a,
+.see_reviews,
+.make_appointment {
+  text-decoration: none;
+  color: #3e68ff;
+}
+
+.cont_2 ul li div p {
+  padding-top: 6px;
+}
+
+.first_section .cont_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.first_section div h1 {
+  letter-spacing: 0.025em;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.first_section_col_1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.first_section_col_2 {
+  margin-left: 3rem;
+}
+
+.first_section_col_2 p {
+  margin-bottom: 1.25rem;
+}
+
+.testimonials,
+.second_section {
+  margin: 6rem 2rem;
+}
+
+.second_section {
+  text-align: center;
+}
+
+.second_section img {
+  height: 400px;
+  width: 600px;
+}
+
+.second_section_cont_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second_section div p {
+  width: 400px;
+  margin-bottom: 1.3rem;
+}
+
+.second_section h1 {
+  margin-bottom: 4rem;
+}
+
+.testimonials h1,
+.second_section h1,
+.services_section h1,
+.gallery_section h1,
+.about_us_title,
+.destinations_section h1 {
+  letter-spacing: 0.025em;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.destinations_section {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.testimonials h1 {
+  margin-bottom: 4rem;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+}
+
+.gallery_section_table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.gallery_section_table td {
+  padding: 10px;
+}
+
+.gallery_section_table img {
+  width: 400px;
+  height: 300px;
+}
+
+.gallery_section_table img {
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery_section h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+}
+
+.input {
+  width: 100%;
+  max-width: 876px;
+  min-width: 400px;
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 1px solid #8b8a8b;
+  border-radius: 4px;
+}
+
+.form_group {
+  margin-bottom: 1rem;
+}
+
+.input:not(textarea) {
+  line-height: 1;
+  height: 2rem;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+.form {
+  margin: 0rem 27rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: inherit;
+}
+
+.membership_header {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.025em;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.submit_button,
+.reset_button {
+  background-color: #3e68ff;
+  color: rgb(226 232 240);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  padding: 10px 25px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.profile_image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+}
+
+.review {
+  width: 400px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.review_content {
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: inherit;
+}
+
+.reviewer {
+  padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.see_reviews {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.review_reviews {
+  margin-top: 6.5rem;
+}
+
+#review_form {
+  margin-top: 9rem;
+  margin-left: 4rem;
+}
+
+.about_us_section {
+  margin-top: 6rem;
+  text-align: justify;
+  margin-right: 6cm;
+  margin-left: 6cm;
+}
+
+.about_us_section p {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: inherit;
+}
+
+.about_us_title {
+  text-align: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.services {
+  margin: 20px;
+}
+
+.services section {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.services h2 {
+  line-height: 2;
+  margin-top: 0;
+}
+
+.services ol {
+  margin: 0;
+  padding: 20px;
+}
+
+.services ol li {
+  line-height: 1.5;
+}
+
+.services_section {
+  margin-top: 6rem;
+}
