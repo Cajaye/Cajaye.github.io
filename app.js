@@ -60,7 +60,11 @@ if (form) {
 if (appoitment_form) {
     appoitment_form.addEventListener("submit", function (e) {
         e.preventDefault();
-        let message = "Hey, " + firstname.value + " " + lastname.value + ", " + "you have an appoitment set for " + date.value + " " + "your email is: " + email.value + ", " + "your phone number is: " + phone.value + ", " + "the service needed is: " + service_dropdown.value + " " + "and your reason for making an appoitment:" + " " + reason.value;
-        alert(message);
+        if (phone.value.length < 10 || phone.value.length > 11) {
+            alert("Phone number must be 10/11 digits")
+        } else {
+            let message = "Hey, " + firstname.value + " " + lastname.value + ", " + "you have an appoitment set for " + date.value + " " + "your email is: " + email.value + ", " + "your phone number is: " + phone.value + ", " + "the service needed is: " + service_dropdown.value + " " + "and your reason for making an appoitment:" + " " + reason.value;
+            alert(message);
+        }
     })
 };
