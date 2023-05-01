@@ -380,6 +380,7 @@ label {
 }
 
 .review {
+  margin: 0.5rem;
   width: 400px;
 }
 
@@ -390,6 +391,8 @@ label {
 }
 
 .review_content {
+  width: 380px;
+  min-width: 200px;
   padding-top: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
