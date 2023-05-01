@@ -301,15 +301,12 @@ header > * {
 }
 
 .gallery_section_table img {
-  width: 400px;
-  height: 300px;
-}
-
-.gallery_section_table img {
   border-radius: 8px;
   object-fit: cover;
   max-width: 100%;
   height: auto;
+  width: 400px;
+  height: 300px;
 }
 
 .gallery_section h1 {
