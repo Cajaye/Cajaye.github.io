@@ -4,7 +4,6 @@ if (year) {
     year.innerText = new Date().getFullYear();
 }
 
-
 let form = document.getElementById("memb-form");
 let appoitment_form = document.getElementById("appointment_form")
 let firstname = document.getElementById("first-name");
