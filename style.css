@@ -301,10 +301,16 @@ header > * {
 }
 
 .gallery_section_table img {
+  transition: transform 0.25s;
   border-radius: 8px;
   object-fit: cover;
   width: 400px;
   height: 300px;
+}
+
+.gallery_section_table img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .gallery_section h1 {
